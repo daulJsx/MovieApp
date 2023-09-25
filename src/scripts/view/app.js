@@ -28,7 +28,7 @@ const renderFilteredMovies = (filteredMovies, keyword) => {
   movieElements.innerHTML = "";
 
   if (filteredMovies.length === 0) {
-    movieElements.innerHTML = `No result for '${keyword}'`;
+    movieElements.innerHTML = `<p class="text-2xl text-white font-medium">No result for '${keyword}'<p/>`;
   } else {
     filteredMovies.forEach((movie) => {
       const releaseDate = new Date(movie.release_date);
