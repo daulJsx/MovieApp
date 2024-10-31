@@ -46,12 +46,12 @@ const renderFilteredMovies = (filteredMovies, keyword) => {
             <figcaption/>
             
             <blockquote>
-              <p 
-                class="text-slate-400 text-base truncate text-justify" 
+              <p class="text-slate-400 text-base truncate text-justify" 
                 id="overview-${movie.id}"
               >
                 ${movie.overview}
-              </p>
+              </p> 
+               
             <blockquote/>
         
             <button 
